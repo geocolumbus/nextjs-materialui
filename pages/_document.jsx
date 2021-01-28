@@ -10,15 +10,15 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta charSet="utf-8" />
+                    <meta charSet='utf-8' />
                     <meta
-                        name="viewport"
-                        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+                        name='viewport'
+                        content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no'
                     />
-                    <meta name="theme-color" content={theme.palette.primary.main} />
+                    <meta name='theme-color' content={theme.palette.primary.main} />
                     <link
-                        rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+                        rel='stylesheet'
+                        href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons'
                     />
                     <style jsx global>
                         {`
@@ -41,8 +41,8 @@ class MyDocument extends Document {
                     </style>
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         )
@@ -65,7 +65,7 @@ MyDocument.getInitialProps = async ctx => {
         ...initialProps,
         // Styles fragment is rendered after the app and page rendering finish.
         styles: [
-            <React.Fragment key="styles">
+            <React.Fragment key='styles'>
                 {initialProps.styles}
                 {sheets.getStyleElement()}
             </React.Fragment>
