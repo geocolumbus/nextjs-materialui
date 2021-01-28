@@ -18,6 +18,24 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## How this app was built
+
+    npx create-next-app
+    cd nextjs-materialui
+    npm install --save @material-ui/core
+
+see https://developerhandbook.com/react/how-to-set-up-nextjs-material-ui/
+
+* update pages/index.js
+* add _document.jsx
+
+Configure the app to run on a different port than 3000 (if desired)
+
+```javascript
+  "scripts": {
+    "dev": "next dev --port 3001",
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
