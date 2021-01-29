@@ -18,57 +18,6 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## How this app was built
-
-    npx create-next-app
-    cd nextjs-materialui
-    npm install --save @material-ui/core
-
-see https://developerhandbook.com/react/how-to-set-up-nextjs-material-ui/
-
-* update pages/index.js
-* add _document.jsx
-
-Configure the app to run on a different port than 3000 (if desired)
-
-```javascript
-  "scripts": {
-    "dev": "next dev --port 3001",
-```
-
-Configure formatting.
-
-Plugins -> Javascript and TypeScript -> Fix ESLint Problems  ```[opt][shift][cmd]F```
-
-You will need an ```.editorconfig``` file.
-
-```text
-root = true
-
-[*.{js, css, xml, html, json, scss}]
-indent_style = space
-indent_size = 4
-tab_width = 4
-trim_trailing_whitespace = true
-insert_final_newline = true
-```
-
-Install eslint dependencies
-
-```bash
-npm install --save-dev eslint eslint-config-standard eslint-loader /
-eslint-plugin-import eslint-plugin-node eslint-plugin-promise /
-eslint-plugin-react eslint-plugin-standard
-```
-
-Install jest test library
-
-```bash
-npm install --save-dev jest jest-fetch-mock jest-localstorage-mock
-```
-
-To configure ESLint automatically in the current project, open the Settings/Preferences dialog ⌘,, go to Languages and Frameworks | JavaScript | Code Quality Tools | ESLint, and select the Automatic ESLint configuration option.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -83,3 +32,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Material-UI
+
+* https://itnext.io/next-js-with-material-ui-7a7f6485f671
