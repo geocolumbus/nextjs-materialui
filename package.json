@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
-    "build": "next build",
+    "build": "build",
     "deploy": "eb deploy --profile geocolumbus",
-    "ebstart": "next build && next start",
+    "ebstart": "node_modules/.bin/next build && node_modules/.bin/next start",
     "start": "next start -p 8080"
   },
   "dependencies": {
