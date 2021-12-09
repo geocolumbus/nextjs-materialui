@@ -1,1 +1,1 @@
-web: npm run ebstart
+web: npm start
