@@ -1,6 +1,9 @@
 import { Box, Container, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
+//
+// Important comments
+//
 const useStyles = makeStyles(theme => ({
     container: {
         maxWidth: 1080
