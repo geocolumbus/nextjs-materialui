@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
-    "build": "build",
+    "build": "next build",
     "deploy": "eb deploy --profile geocolumbus",
     "ebstart": "node_modules/.bin/next build && node_modules/.bin/next start",
     "start": "next start -p 8080"
